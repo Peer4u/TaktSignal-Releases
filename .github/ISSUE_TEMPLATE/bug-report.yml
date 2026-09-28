@@ -1,0 +1,46 @@
+name: Bug report (Community Alpha)
+description: Something in TaktSignal did not work as described — the app, the Control Center, sync, backups, updates or the documentation.
+labels: ["bug", "community-alpha"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for testing TaktSignal Community Alpha. **This issue tracker is public** — anyone can read what you post.
+
+        **Never post:** passwords, ERPNext API keys or secrets, tokens, database dumps, ERPNext or TaktSignal backups,
+        raw factory data, or confidential customer / supplier / order information. Use invented names ("customer A", "WO-1")
+        and hide real names and numbers in screenshots. The diagnostics file (Control Center → Help & diagnostics →
+        Export diagnostics) is redacted for this purpose — review it before attaching.
+        Suspected security problem? **Do not open an issue** — e-mail work.manhcang@gmail.com privately (see https://taktsignal.cloud/security).
+  - type: dropdown
+    id: os
+    attributes:
+      label: Computer
+      options: ["macOS (Apple Silicon)", "Ubuntu", "Debian", "Other"]
+    validations: { required: true }
+  - type: input
+    id: version
+    attributes:
+      label: TaktSignal version
+      description: "Shown at the top right of the Control Center, e.g. Community Alpha · version 0.1.0"
+    validations: { required: true }
+  - type: input
+    id: erpnext
+    attributes: { label: ERPNext version, placeholder: "e.g. 15.x or 16.x" }
+  - type: textarea
+    id: what
+    attributes: { label: What happened, description: "What you expected, and what you saw instead (exact message if any)" }
+    validations: { required: true }
+  - type: textarea
+    id: steps
+    attributes: { label: Steps to reproduce, placeholder: "1. …\n2. …" }
+  - type: textarea
+    id: diagnostics
+    attributes: { label: Diagnostics file (optional), description: "Drag the exported taktsignal-support-….json here after reviewing it" }
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Before submitting
+      options:
+        - label: I removed passwords, API keys, backups, database dumps, raw factory data and customer / supplier names from everything above.
+          required: true

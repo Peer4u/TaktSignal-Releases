@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security vulnerability — report privately by e-mail
+    url: https://taktsignal.cloud/security
+    about: Never open a public issue for a suspected vulnerability. E-mail work.manhcang@gmail.com (details on the security page).
+  - name: Questions, private support or anything containing private data
+    url: https://taktsignal.cloud/support
+    about: E-mail work.manhcang@gmail.com. Never post API keys, passwords, backups, database dumps or customer data here.

@@ -1,0 +1,70 @@
+TaktSignal Community Alpha Licence
+Version 1 — 26 September 2026
+
+Copyright (c) 2026 Nguyen Dac Manh Cang. All rights reserved, except as granted below.
+
+"TaktSignal" means the TaktSignal software published by its owner, Nguyen Dac Manh Cang (the "Licensor";
+contact work.manhcang@gmail.com; https://taktsignal.cloud), in binary form, including its installers, updates,
+documentation and website content, but excluding the third-party components described in section 5. "You" means
+the person or organisation using it.
+
+1. What you may do
+   While TaktSignal is offered as a Community Alpha, you may, free of charge:
+   a. download TaktSignal from https://taktsignal.cloud or from release links published there;
+   b. install and run it on computers and servers that you control, including for your organisation's internal
+      business, to evaluate and test it — for example with your own ERPNext data;
+   c. make the copies that installing, running and backing it up require;
+   d. keep, use, export and delete the data and backups TaktSignal creates on your computers; that data is yours,
+      and nothing in this licence gives the Licensor any right to it;
+   e. share feedback, bug reports and diagnostics files with the Licensor, if you choose to.
+
+2. What this licence does not allow
+   Unless the Licensor agrees in writing, you may not:
+   a. redistribute, republish, mirror or host TaktSignal's binaries or installers for others to download (link to
+      https://taktsignal.cloud instead);
+   b. sell, rent, lease or sublicense TaktSignal, or offer it to third parties as a hosted service;
+   c. distribute modified versions of TaktSignal;
+   d. present TaktSignal, or a product derived from it, as your own, or remove or change its copyright, licence or
+      third-party notices;
+   e. distribute any TaktSignal source code that may come into your possession. This licence grants no rights to
+      the source code, which is not published.
+   Reverse engineering, decompiling or disassembling TaktSignal is not permitted, except to the extent that
+   applicable law expressly allows it despite this restriction (for example for interoperability or security
+   research that the law protects). Nothing in this licence limits a right that applicable law gives you and that
+   cannot be waived.
+
+3. Feedback
+   Feedback is voluntary. If you send it, the Licensor may use it to improve TaktSignal without obligation to you.
+   Please never send credentials, backups or raw customer, supplier or factory data.
+
+4. Ownership
+   TaktSignal is licensed, not sold. The Licensor keeps all rights in TaktSignal that this licence does not
+   expressly grant. No trademark rights are granted.
+
+5. Third-party components
+   TaktSignal includes open-source software from other authors, including Node.js, PostgreSQL, OpenSSL, ICU,
+   GNU libiconv, GNU gettext (Windows) and the npm packages listed in THIRD_PARTY_NOTICES.txt. Each is licensed
+   to you by its own authors under its own licence, reproduced in THIRD_PARTY_NOTICES.txt,
+   THIRD_PARTY_RUNTIME_NOTICES.md and the runtime/ folder shipped with TaktSignal. Those licences govern those
+   components. Nothing in this licence restricts, replaces or adds conditions to the rights they give you — for
+   example, the right to replace the dynamically linked LGPL libraries with your own versions.
+
+6. Community Alpha — no warranty
+   TaktSignal Community Alpha is early, pre-release software for evaluation. It may contain errors, and its alerts
+   can be wrong or incomplete. It is decision support; you remain responsible for your operational decisions.
+   To the extent permitted by applicable law, TaktSignal is provided "AS IS", without warranties of any kind,
+   express or implied, including merchantability, fitness for a particular purpose and non-infringement.
+
+7. Limitation of liability
+   To the extent permitted by applicable law, the Licensor is not liable for any indirect, incidental, special or
+   consequential damages, or for lost profits, production delays, lost orders or lost data, arising from the use
+   of or inability to use TaktSignal. Because TaktSignal is provided free of charge, the Licensor's total liability
+   is limited to the greater of the amount you paid for it (normally zero) and the minimum amount that applicable
+   law requires. Nothing in this licence excludes liability that cannot be excluded by law.
+
+8. Term
+   This licence applies to each Community Alpha release until you stop using it, or until it ends because you do
+   not comply with it. When it ends, uninstall TaktSignal; your data and backups remain yours. A later release may
+   come with a different licence, which you accept by installing that release.
+
+The Community Alpha terms of use at https://taktsignal.cloud/terms describe the same arrangement in plain language.

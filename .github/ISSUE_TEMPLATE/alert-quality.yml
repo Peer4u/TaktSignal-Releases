@@ -1,0 +1,72 @@
+name: Wrong, missing or confusing alert (Community Alpha)
+description: TaktSignal raised an alert that was wrong, missed a problem you saw coming, or showed confidence / data trust that did not match reality.
+labels: ["alert-quality", "community-alpha"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you — this is the most valuable Community Alpha feedback.
+
+        **Never post:** ERPNext API keys or secrets, passwords, ERPNext or TaktSignal backups, database dumps, or raw customer, supplier or factory data.
+        Describe the situation with **invented names** (e.g. "customer A", "material X", "WO-1") and hide real names and numbers in screenshots.
+        This issue tracker is public.
+        Suspected security problem? **Do not open an issue** — e-mail work.manhcang@gmail.com privately (see https://taktsignal.cloud/security).
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What happened?
+      options:
+        [
+          "Alert was wrong (false positive)",
+          "Alert was partly right",
+          "A problem was missed (no alert)",
+          "Confidence looked wrong",
+          "Data Trust / freshness looked wrong",
+          "Time at stake looked wrong",
+          "Other",
+        ]
+    validations: { required: true }
+  - type: dropdown
+    id: alerttype
+    attributes:
+      label: Alert type (if any)
+      options:
+        [
+          "Material shortage",
+          "Work-center overload",
+          "Late start",
+          "Late completion",
+          "WIP aging",
+          "Blocked operation",
+          "Customer delivery risk",
+          "Inventory trust",
+          "No alert",
+          "Not sure",
+        ]
+  - type: textarea
+    id: expected
+    attributes:
+      label: What TaktSignal showed vs. what was really happening
+      description: "Use invented names. Example: 'Shortage of material X for WO-1 at Mon 08:00; in reality the material was in warehouse B, which the reader cannot see.'"
+    validations: { required: true }
+  - type: textarea
+    id: reasons
+    attributes: { label: Confidence and its reasons as shown on the alert, placeholder: "e.g. Medium — supplier ETA unconfirmed; assumed calendar" }
+  - type: input
+    id: versions
+    attributes: { label: TaktSignal version and ERPNext version, placeholder: "0.1.0 · ERPNext 15.x" }
+    validations: { required: true }
+  - type: textarea
+    id: diagnostics
+    attributes:
+      {
+        label: Diagnostics file (optional),
+        description: "Control Center → Help & diagnostics → Export diagnostics. It contains no names or secrets — review it before attaching.",
+      }
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Before submitting
+      options:
+        - label: I used invented names and removed credentials, backups and real customer / supplier / factory data from everything above.
+          required: true

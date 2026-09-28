@@ -1,0 +1,77 @@
+name: Installer / setup problem (desktop Community Alpha)
+description: Something went wrong while downloading, installing, setting up, updating, repairing or uninstalling TaktSignal on your computer.
+labels: ["desktop", "community-alpha"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for testing. This issue tracker is **public**.
+
+        **Never post:** passwords, ERPNext API keys or secrets, ERPNext or TaktSignal backups, database dumps, your ERPNext address, or company / customer / supplier names.
+        The diagnostics file from Control Center → Help & diagnostics → Export diagnostics is redacted for this purpose — please review it before attaching.
+        Suspected security problem? **Do not open an issue** — e-mail work.manhcang@gmail.com privately (see https://taktsignal.cloud/security).
+  - type: dropdown
+    id: os
+    attributes:
+      label: Computer
+      options:
+        ["macOS (Apple Silicon)", "Ubuntu", "Debian", "Windows 11 (experimental)", "Windows 10 (experimental)", "macOS (Intel, not supported yet)", "Other"]
+    validations: { required: true }
+  - type: input
+    id: osversion
+    attributes: { label: Operating system version, placeholder: "e.g. Windows 11 23H2, macOS 14.6, Ubuntu 24.04" }
+    validations: { required: true }
+  - type: input
+    id: version
+    attributes:
+      {
+        label: TaktSignal version and commit,
+        description: "Shown at the top right of the Control Center, e.g. Community Alpha · version 0.1.0",
+        placeholder: "0.1.0 (c1fc85dbee8f)",
+      }
+    validations: { required: true }
+  - type: dropdown
+    id: stage
+    attributes:
+      label: Where did it happen?
+      options:
+        [
+          "Download page",
+          "macOS / Windows security warning",
+          "Installing",
+          "Opening for the first time",
+          "System check / preparing",
+          "Administrator",
+          "Connect ERPNext",
+          "Read-only check / capabilities",
+          "First sync",
+          "Data-trust screen",
+          "Signing in",
+          "After a restart",
+          "Backup / restore",
+          "Update",
+          "Repair",
+          "Uninstall",
+          "Other",
+        ]
+    validations: { required: true }
+  - type: textarea
+    id: message
+    attributes: { label: The exact message you saw, description: "Title and text as shown (a screenshot is fine — hide private data)" }
+    validations: { required: true }
+  - type: textarea
+    id: steps
+    attributes: { label: What you did just before, placeholder: "1. …\n2. …" }
+  - type: input
+    id: erpnext
+    attributes: { label: ERPNext version, placeholder: "e.g. 15.x" }
+  - type: textarea
+    id: diagnostics
+    attributes: { label: Diagnostics file, description: "Drag the exported taktsignal-support-….json here after reviewing it" }
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Before submitting
+      options:
+        - label: I removed passwords, API keys, backups and private names from everything above.
+          required: true
