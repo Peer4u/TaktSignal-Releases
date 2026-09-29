@@ -38,9 +38,13 @@ It is **not** production-proven software. Alerts can be wrong or missing.
 
 ## Known limitations
 
-- **Unsigned test builds.** The macOS app is not signed with an Apple Developer ID or notarized; macOS blocks the
-  first open until you approve it ([macOS guide](https://taktsignal.cloud/docs/macos-alpha-install)). The Windows installer is not code-signed;
-  SmartScreen warns. You can [verify every download](https://taktsignal.cloud/docs/verify-download) with its SHA-256.
+- **Code signing.** The macOS app is signed with TaktSignal's Apple Developer ID and notarized by Apple (from 0.1.0).
+  The Linux `.deb` is not in a signed apt repository; its integrity comes from the SHA-256 and the signed release
+  metadata. The experimental Windows installer is not published and not code-signed. You can
+  [verify every download](https://taktsignal.cloud/docs/verify-download) with its SHA-256.
+- **Replacing the Mac app by hand.** If you install a newer download over a running older version, the Control
+  Center can show “Not found” until you restart your Mac (or log out and back in). Data is kept
+  ([macOS guide](https://taktsignal.cloud/docs/macos-alpha-install#replacing-an-existing-installation)).
 - **One computer, one person.** The desktop installation runs for the OS user who installed it and is reachable only
   from that computer. Sharing with a team requires a server installation (not covered by these guides).
 - **ERPNext versions.** Exercised with ERPNext 15 (v15.121.4) and 16 (v16.36.0). Older versions connect with a
