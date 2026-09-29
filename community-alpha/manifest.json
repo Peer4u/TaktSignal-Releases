@@ -1,0 +1,97 @@
+{
+  "manifestVersion": 1,
+  "product": "TaktSignal",
+  "channel": "community-alpha",
+  "version": "0.1.0",
+  "releasedAt": "2026-09-28T17:17:00.311Z",
+  "minimumUpdateFrom": "0.0.0",
+  "database": {
+    "engine": "postgresql",
+    "major": 16,
+    "migrations": 4,
+    "latestMigration": "0003_community_alpha_semantics"
+  },
+  "notesUrl": "https://taktsignal.cloud/docs/release-notes",
+  "knownLimitationsUrl": "https://taktsignal.cloud/docs/community-alpha-limitations",
+  "erpnextExercised": [
+    "15.121.4",
+    "16.36.0"
+  ],
+  "systemRequirements": {
+    "darwin": "macOS 12 or later, 4 GB RAM, 2 GB free disk space",
+    "win32": "Windows 10 or 11 (64-bit), 4 GB RAM, 2 GB free disk space",
+    "linux": "Ubuntu 22.04+ / Debian 12+ (x64) with a desktop keyring, 4 GB RAM, 2 GB free disk space"
+  },
+  "artifacts": [
+    {
+      "platform": "darwin",
+      "arch": "arm64",
+      "kind": "update-payload",
+      "format": "tar.gz",
+      "fileName": "TaktSignal-0.1.0-macos-arm64-update.tar.gz",
+      "size": 76417422,
+      "sha256": "43f227b1197ebea1c257cfc8a124bce4888bca6e38f9b647ad006de53aa709a2",
+      "signed": false,
+      "notarized": false,
+      "label": "Update package",
+      "url": "https://github.com/Peer4u/TaktSignal-Releases/releases/download/0.1.0/TaktSignal-0.1.0-macos-arm64-update.tar.gz"
+    },
+    {
+      "platform": "darwin",
+      "arch": "arm64",
+      "kind": "installer",
+      "format": "zip",
+      "fileName": "TaktSignal-0.1.0-macos-arm64.zip",
+      "size": 76375983,
+      "sha256": "371ffcd2314c21af416972228ed7f9ec0a9f400a048a4c08832524b81080c397",
+      "signed": true,
+      "notarized": true,
+      "label": "macOS 12+ (Apple Silicon)",
+      "url": "https://github.com/Peer4u/TaktSignal-Releases/releases/download/0.1.0/TaktSignal-0.1.0-macos-arm64.zip"
+    },
+    {
+      "platform": "darwin",
+      "arch": "arm64",
+      "kind": "installer",
+      "format": "dmg",
+      "fileName": "TaktSignal-0.1.0-macos-arm64.dmg",
+      "size": 97835118,
+      "sha256": "fc7840bb02ae5eac3fcc10f1443070267f40a48bfe6f5aeb295c9a98f2413809",
+      "signed": true,
+      "notarized": true,
+      "label": "macOS 12+ (Apple Silicon)",
+      "url": "https://github.com/Peer4u/TaktSignal-Releases/releases/download/0.1.0/TaktSignal-0.1.0-macos-arm64.dmg"
+    },
+    {
+      "platform": "linux",
+      "arch": "x64",
+      "kind": "update-payload",
+      "format": "tar.gz",
+      "fileName": "TaktSignal-0.1.0-linux-x64-update.tar.gz",
+      "size": 65216394,
+      "sha256": "a9bca81b7f022820fff9b628a580c5ec3412e5e7be86c4d1613cac2e86821550",
+      "signed": false,
+      "notarized": false,
+      "label": "Update package",
+      "url": "https://github.com/Peer4u/TaktSignal-Releases/releases/download/0.1.0/TaktSignal-0.1.0-linux-x64-update.tar.gz"
+    },
+    {
+      "platform": "linux",
+      "arch": "x64",
+      "kind": "installer",
+      "format": "deb",
+      "fileName": "TaktSignal-0.1.0-linux-x64.deb",
+      "size": 41224996,
+      "sha256": "b4b0ec39e026aeda27e7b5004d611bc165f8951ddc4678e650eee3b43fa2434e",
+      "signed": false,
+      "notarized": false,
+      "label": "Linux x64 (.deb — Ubuntu 22.04+, Debian 12+)",
+      "url": "https://github.com/Peer4u/TaktSignal-Releases/releases/download/0.1.0/TaktSignal-0.1.0-linux-x64.deb"
+    }
+  ],
+  "signature": {
+    "algorithm": "ed25519",
+    "keyId": "4e5e532b3a0fcc9e",
+    "value": "wNt//0X61KwhnGLQDjdhXMZW+oeV2by3Zba3P4TEehy+F3qX4pNNPwKN+7w/T8kzFjacJnmB3wHAKOccHNt9Cw=="
+  }
+}
