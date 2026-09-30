@@ -42,9 +42,9 @@ It is **not** production-proven software. Alerts can be wrong or missing.
   The Linux `.deb` is not in a signed apt repository; its integrity comes from the SHA-256 and the signed release
   metadata. The experimental Windows installer is not published and not code-signed. You can
   [verify every download](https://taktsignal.cloud/docs/verify-download) with its SHA-256.
-- **Replacing the Mac app by hand.** If you install a newer download over a running older version, the Control
-  Center can show “Not found” until you restart your Mac (or log out and back in). Data is kept
-  ([macOS guide](https://taktsignal.cloud/docs/macos-alpha-install#replacing-an-existing-installation)).
+- **Install into Applications.** Open TaktSignal from Applications, not from the disk image or Downloads. Since
+  0.1.1 the app replaces an older copy still running in the background and stops by itself if its own files are
+  deleted (0.1.0 could show “Not found” until a restart). Data is kept.
 - **One computer, one person.** The desktop installation runs for the OS user who installed it and is reachable only
   from that computer. Sharing with a team requires a server installation (not covered by these guides).
 - **ERPNext versions.** Exercised with ERPNext 15 (v15.121.4) and 16 (v16.36.0). Older versions connect with a
